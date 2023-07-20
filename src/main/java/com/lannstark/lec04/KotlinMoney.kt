@@ -5,3 +5,4 @@ data class KotlinMoney(val amount : Long) {
         return KotlinMoney(this.amount + other.amount)
     }
 }
+

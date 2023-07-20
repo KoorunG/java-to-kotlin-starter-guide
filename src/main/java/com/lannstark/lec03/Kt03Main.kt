@@ -10,7 +10,9 @@ fun main() {
     // 대신 코틀린에서는 toXXX() 와 같은 타입캐스팅 함수를 다양하게 제공한다.
     val number1: Float = 3.1F
     val number2: Int = 5
-    println(number2 / number1)
+
+    println(number2.toFloat() / number1) // 1.6129032
+    println(number2 / number1.toInt())   // 1
 
 //    printAgeIfPerson(Person("쿠렁", 30))
 //    printAgeIfPerson("에일리언")

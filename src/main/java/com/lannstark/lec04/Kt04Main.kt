@@ -18,8 +18,8 @@ fun compareMoney(money1 : JavaMoney, money2 : JavaMoney) {
 fun equalsMoney(money1 : JavaMoney, money2 : JavaMoney) {
     // 코틀린에서 동일성은 == (암묵적으로 equals()를 호출)
     // 동등성은 === 로 비교한다.
-    println("코틀린의 == :::: ${money1 == money2}")
-    println("코틀린의 === :::: ${money1 === money2}")
+    println("코틀린의 == :::: ${money1 == money2}")         // true
+    println("코틀린의 === :::: ${money1 === money2}")       // false
 }
 
 fun operatorOverloading(money1 : KotlinMoney, money2 : KotlinMoney) {

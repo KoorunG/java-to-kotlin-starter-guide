@@ -45,7 +45,7 @@ class KotlinPersonWithValidation(name: String, val age: Int, address : String?) 
     }
 
     // 1. 클래스 함수 선언법
-    fun isAdult() = this.age >= 20
+//    fun isAdult() = this.age >= 20
 
     // 2. 코틀린에서는 커스텀 getter 이라는 것을 선언할 수 있다..! (마치 프로퍼티인것 처럼)
     // 객체의 속성을 나타내는 것이라면 custom getter을 사용하고 아니면 함수로 처리하는 것이 깔끔하다.
