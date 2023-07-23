@@ -19,6 +19,9 @@ fun main() {
         println(i)
     }
 
+    val newPrices = prices.plus(700) // 불변컬렉션 :: plus()로 추가된 요소가 반영된 새로운 컬렉션 반환 가능
+    mutablePrices.add(700)                             // 가변컬렉션 :: add(V)로 기존 컬렉션에 값 추가 및 수정 가능
+
     // 코틀린에서 Map은 Pair 객체를 받는다.
     // to 키워드를 사용해서 Pair 객체를 바로 생성할 수 있다.
     val map = mapOf(1 to "MONDAY", 2 to "TUESDAY", 3 to "WEDNESDAY")
