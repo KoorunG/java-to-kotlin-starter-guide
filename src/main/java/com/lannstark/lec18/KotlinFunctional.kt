@@ -10,11 +10,11 @@ fun main() {
         Fruit(6L, "멜론", 6_000L, 10_000L),
     )
 
-    val filteredFruits = fruits.filter { it.name == "사과" }
-    val allFruits = fruits.all { it.name == "사과" }
-    val noneFruits = fruits.none { it.name == "사과" }
-    val anyFruits = fruits.any { it.name == "사과" }
-    val countFruits = fruits.count { it.name == "사과" }
+    val filteredFruits = fruits.filter { fruit -> fruit.name == "사과" }
+    val allFruits = fruits.all { fruit -> fruit.name == "사과" }
+    val noneFruits = fruits.none { fruit -> fruit.name == "사과" }
+    val anyFruits = fruits.any { fruit -> fruit.name == "사과" }
+    val countFruits = fruits.count { fruit -> fruit.name == "사과" }
     val sortedByFactoryPriceFruits = fruits.sortedBy { it.factoryPrice }
     val sortedByDescendingFactoryPriceFruits = fruits.sortedByDescending { it.factoryPrice }
     val distinctedFruitByName = fruits.distinctBy { it.name }
